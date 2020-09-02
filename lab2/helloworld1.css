@@ -1,0 +1,25 @@
+h1 {
+	color: green;
+	font-size: 150%;
+}
+
+p {
+	font-family: "time new roman";
+	text-indent: 20px;
+	margin-left: 10px;
+}
+
+#content {
+		background-color: #c0c0c0;
+		width: 500px;
+		min-height: 300px;
+		padding: 10px;
+		margin: 10px;
+		border: solid 1px #44444;
+		font-size: 20px;
+}
+
+.post{
+	background-color: #b0b0b0;
+	font-size: 15px;
+}
