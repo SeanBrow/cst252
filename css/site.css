@@ -1,0 +1,31 @@
+element.style {
+}
+user agent stylesheet
+section {
+    display: block;
+}
+body {
+    background-color: #8FBC8F;
+    padding: 25px;
+    font-size: 15px;
+}
+
+#title { font-style: 'Times New Roman';
+Font-weight: bold;
+  font-size: 20px;
+ margin: 0 px;
+}
+
+#Pic {
+  margin : 10px;
+    border: solid 1px #444444;
+}
+#content {
+  background-color:#2E8B57;
+  Width: 500px;
+  min-height: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px #444444;
+  Font-size: 20px;
+}
