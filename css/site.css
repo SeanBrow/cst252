@@ -20,15 +20,33 @@ Font-weight: bold;
   margin : 10px;
     border: solid 1px #444444;
 }
+#float-right{
+  float: right;
+}
 #content {
   background-color:#2E8B57;
-  Width: 500px;
+  Width: 1000px;
   min-height: 300px;
   padding: 10px;
   margin: 10px;
   border: solid 1px #444444;
   Font-size: 20px;
 }
+
+#screenshot {
+  background-color:#2E8B57;
+width: 450px;
+  height: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px #444444;
+
+}
 p {
   font-size: 20px;
+}
+#subtitle {
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
 }
