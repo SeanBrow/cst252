@@ -4,39 +4,16 @@
 * Public Domain
 */
 //Functions
-function firstthing (test){
-  console.log (test + ": This is the first thing. <br>")
-}
-function secondthing (test) {
-  console.log (test + ": This is the second thing. <br>")
-}
-function thirdthing (test) {
-  console.log (test + ": This is the third thing. <br>")
-}
+var outputEl = document.getElementById("output");
 
-//Test 1
-firstthing("TEST 1");
-secondthing("TEST 1");
-thirdthing("TEST 1");
+document.getElementById("output").style.color = "lightblue";
 
-//Test 2
-setTimeout(function() {
-firstthing("TEST 2");
-}, 0);
-setTimeout(function() {
-secondthing("TEST 2");
-}, 0);
-setTimeout(function() {
-thirdthing("TEST 2");
-},0);
 
-//Test 3
-setTimeout (function() {
-  firstthing("TEST 3");
-},3000);
-setTimeout (function() {
-secondthing("TEST 3");
-},1000);
-setTimeout (function() {
-thirdthing("TEST 3");
-},4000);
+var new1El = document.createElement("p")
+ new1El.innerHTML = "This is harder than you think.";
+
+var new2El = document.createElement("p")
+new2El.innerHTML = "But it will take a while."
+
+outputEl.appendChild(new1El);
+outputEl.appendChild(new2El);
