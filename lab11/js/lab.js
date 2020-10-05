@@ -6,6 +6,7 @@
 //Variable
 
 //function
+// Return Gryffindor, Ravenclaw, Slytherin, and/or Hufflepuff
 function sortingHat (str) {
   len = str.length;
   mod = len %  4;
@@ -23,33 +24,38 @@ function sortingHat (str) {
   }
 }
 //housesArray
+// Seperate house.
 housesArray = [
 {
-title: "Gryffindor",
-text: " hello"
+house: "Gryffindor",
+text: "Gryffindors are known for daring, nerve and chivalry."
 },
 
 {
-title: "Ravenclaw",
-text: " hello"
+house: "Ravenclaw",
+text: " Members of this house are characterised by their wit, intelligence, creativity and wisdom."
 },
 
 {
-title: "Slytherin",
-text: " hello"
+house: "Slytherin",
+text: " Slytherin possess the traits of cunning, resourcefulness and ambition."
 
 },
 
 {
-title: "Hufflepuff",
-text: " hello"
+house:"Hufflepuff",
+text: " Hufflepuff is the most inclusive of the four houses, valuing hard work, patience, loyalty and fair play rather than a particular aptitude in its members."
 },
-
+{
+title: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+text: " AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+},
 ]
 
-
+// return Gryffindor, Ravenclaw, Slytherin, and Hufflepuff
 function sortingHatFinal(str) {
-  mod = Math.abs(4) % housesArray.length;
+    len = str.length;
+mod = len % housesArray.length;
   return housesArray[mod];
 }
 
@@ -58,7 +64,7 @@ myButton.addEventListener ("click", function () {
     var name = document.getElementById("input").value;
     var house = sortingHatFinal(name);
 
-    newText = "<b><p> The Sorting Hat has sorted you into " + house.title +".</p></b>" +
+    newText = "<b><p> The Sorting Hat has sorted you into " + house.house +".</p></b>" +
      "<p>" + house.text + "</p>";
 
     document.getElementById("output").innerHTML = newText;

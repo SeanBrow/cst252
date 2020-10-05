@@ -1,7 +1,7 @@
 #output {
   background-color: green;
   min-width: 300px;
-  min-height: 300px;
+  min-height: 150px;
   padding: 10px;
   margin: 10px;
   Font-size: 20px;
@@ -9,6 +9,7 @@
 color; black;
 }
 .input {
+    background-color: green;
   border: solid 1px #333333;
      padding: 10px 10px 30px;
 
