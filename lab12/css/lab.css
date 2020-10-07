@@ -8,6 +8,12 @@
    font-family: "Times New Roman", Times, serif;
 color: black;
 }
+.cols {
+-webkit-column-width: 200px;
+-moz-column-width: 200px;
+column-width: 200px;
+
+}
 .input {
     background-color: green;
   border: solid 1px #333333;

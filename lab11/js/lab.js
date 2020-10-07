@@ -51,11 +51,25 @@ title: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 text: " AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 },
 ]
+function hashCode (str){
+  //hash is a numeric value returned based on all the values in a string.
+    var hash = 0;
+    if (str.length == 0) {
+    return hash;}
+    for (i = 0; i < str.length; i++) {
+      //char code is to return returns an integer between 0 and any number in the ().
+    char = str.charCodeAt(i);
+    hash = ((hash<<5)-hash)+char;
+    hash = hash & hash;
+    }
+    return hash;
+}
 
 // return Gryffindor, Ravenclaw, Slytherin, and Hufflepuff
 function sortingHatFinal(str) {
-    len = str.length;
-mod = len % housesArray.length;
+
+x = hashCode(str);
+ mod = Math.abs(x) % housesArray.length;
   return housesArray[mod];
 }
 
