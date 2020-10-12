@@ -8,19 +8,21 @@ var str = "";
   var i=0;
 
   //For function
-for (i =1; i <= 30; i++) {
+for (i =1; i <= 200; i++) {
   //print out the number, the basic part of the list.
   str+= i +". - ";
-
+if(i%35==0) {
+str +=   " BuzzBoom!<br>";
+console.log ("FizzBoom");
+}
     //adds Fizz,Buzz, Boom, Etc...
-  if (i%15 == 0)
-
+    else if (i%21==0) {
+    str +=   " FizzBoom!<br>";
+  console.log ("FizzBoom");
+}
+ else  if (i%15 == 0)
   { str +=  " FizzBuzz! <br>";
   console.log ("FizzBuzz");
-  }
-  else if (i%21==0) {
-  str +=   " FizzBoom!<br>";
-console.log ("FizzBoom");
   }
   else if (i %3 ==0) {
   str +=   " Fizz!<br>";
@@ -39,7 +41,12 @@ console.log ("FizzBoom");
   str+= i + "</br>";
         console.log(i);
   }
-
 }
+
+
+//BONUS
+
+
+
 //output
  document.getElementById("output").innerHTML = str;
