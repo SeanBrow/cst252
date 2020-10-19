@@ -4,21 +4,29 @@
 * Public Domain
 */
 //Functions
-function firstthing (test){
-  console.log (test + ": This is the first thing. <br>")
+window.onload = function ( ) {
+
+output = document.getElementById("output");
+
+function firstthing (test) {
+  console.log(test + ": This is the first thing.<br>");
+  output.innerHTML += test + ": This is the first thing.<br>";
 }
+
 function secondthing (test) {
-  console.log (test + ": This is the second thing. <br>")
+  console.log(test + ": This is the second thing.<br>");
+ output.innerHTML  += test + ": This is the second thing.<br>";
 }
+
 function thirdthing (test) {
-  console.log (test + ": This is the third thing. <br>")
+  console.log(test + ": This is the third thing.<br>");
+  output.innerHTML  += test + ": This is the third thing.<br>";
 }
 
 //Test 1
 firstthing("TEST 1");
 secondthing("TEST 1");
 thirdthing("TEST 1");
-
 //Test 2
 setTimeout(function() {
 firstthing("TEST 2");
@@ -40,3 +48,4 @@ secondthing("TEST 3");
 setTimeout (function() {
 thirdthing("TEST 3");
 },4000);
+}

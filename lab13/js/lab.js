@@ -9,7 +9,6 @@ var str = "";
 
   //For function
 for (i =1; i <= 200; i++) {
-  debugger;
   //print out the number, the basic part of the list.
   str+= i +". - ";
 if(i%35==0) {
@@ -37,7 +36,6 @@ console.log ("FizzBoom");
   str +=   " Boom!<br>";
     console.log("Boom");
   }
-
 // if there is no assigned number, it will just fill in via the assigned number with a break.
   else {
   str+= i + "</br>";
