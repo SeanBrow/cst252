@@ -1,0 +1,67 @@
+#output {
+  background-color: green;
+  min-width: 300px;
+  min-height: 150px;
+  padding: 10px;
+  margin: 10px;
+  Font-size: 20px;
+   font-family: "Times New Roman", Times, serif;
+color: black;
+}
+.cols {
+-webkit-column-width: 200px;
+-moz-column-width: 200px;
+column-width: 200px;
+
+}
+.input {
+    background-color: green;
+  border: solid 1px #333333;
+     padding: 10px 10px 30px;
+
+}
+
+
+#subject {
+  Width: 900px;
+  min-height: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px #444444;
+  Font-size: 20px;
+}
+
+
+.strange {
+  background-color: #000000;
+    Width: 500px;
+  min-height: 300px;
+  padding: 10px;
+  margin: 10px;
+  Font-size: 20px;
+  filter: blur(5px);
+  font-family: wingdings;
+color: white;
+}
+.formal {
+background-color:#2E8B57;
+    Width: 900px;
+  min-height: 300px;
+  padding: 10px;
+  margin: 10px;
+  Font-size: 12px;
+  font-family: Georgia, serif;
+    filter: blur(0px);
+color: white;
+}
+.informal {
+background-color:white;
+    Width: 900px;
+  min-height: 300px;
+  padding: 10px;
+  margin: 10px;
+  Font-size: 12px;
+  font-family: monospace;
+    filter: blur(0px);
+color: black;
+}
