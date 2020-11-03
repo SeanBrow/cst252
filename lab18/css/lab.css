@@ -1,0 +1,28 @@
+#output {
+  background-color: green;
+  min-width: 300px;
+  min-height: 150px;
+  padding: 10px;
+  margin: 10px;
+  Font-size: 20px;
+   font-family: "Times New Roman", Times, serif;
+color: black;
+}
+.cols {
+-webkit-column-width: 200px;
+-moz-column-width: 200px;
+column-width: 200px;
+
+}
+.input {
+    background-color: green;
+  border: solid 1px #333333;
+     padding: 10px 10px 30px;
+
+}
+#bg {
+    background-color: #8FBC8F;
+    padding: 25px;
+    font-size: 15px;
+    color: black;
+}
