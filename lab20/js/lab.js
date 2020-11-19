@@ -18,7 +18,12 @@ type:"GET"
   var imageUrl= data.img;
   var title = data.title;
   var alt=data.alt;
-  var html= ' <div id="output"> <h2> ${title}</h2> <img src="${imageUrl}" title="$alt"> </div> '
+  var html = `
+        <div>
+          <h2>${title}</h2>
+          <img src="${imageUrl}" title="${alt}"><br>
+        </div>
+      `
   $("#result").append(html);
 
   })
